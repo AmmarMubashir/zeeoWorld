@@ -1,0 +1,13 @@
+.tabBtn{
+    padding: 10px 25px;
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    /* background-color: red; */
+}
+.tabBtn:hover{
+    border:1px solid transparent;
+    background:#B4D333 ;
+    transition: 0.3s;
+}

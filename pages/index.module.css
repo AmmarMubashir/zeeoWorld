@@ -1,0 +1,73 @@
+
+/* .bkgImg{
+    background: url('/assets/forest.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+  
+  .navList{
+    display: flex;
+  }
+  .navList ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 25px;
+    color: white;
+  }
+  .navList ul li a{
+    padding: 0 10px;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .navList ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navList ul li a:hover::after{
+    width: 100%;
+}
+
+.navButton button{
+    border-radius: 25px;
+    background-color: #00AEEF;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.navButton button:hover{
+    background-color: #00AEEF;
+}
+.span{
+  color: #00AEEF;
+}
+.Mui-selected{
+  background-color: red;
+}
+.css-heg063-MuiTabs-flexContainer{
+  background-color: orange;
+  display: block;
+}
+/* .Mui-selected {
+  background: blue;
+  border-radius: 20px;
+  padding: 5px 30px;
+  color: white;
+} */
+
+@media(max-width:1024px){
+  .navList,.navButton{
+    display: none;
+  }
+}
